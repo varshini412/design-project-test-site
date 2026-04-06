@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Dashboard - SkillBridge</title>
-    style.css
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -12,9 +12,9 @@
 
         <!-- Current Role -->
         <label>Current Role</label><br>
-        <input type="text" id="currentRole"><br><br>
+        <input type="text" id="currentRole" placeholder="e.g. Student"><br><br>
 
-        <!-- Skills -->
+        <!-- Current Skills -->
         <label>Your Current Skills</label><br>
         <input type="checkbox" value="HTML"> HTML<br>
         <input type="checkbox" value="CSS"> CSS<br>
@@ -25,13 +25,19 @@
         <select id="targetRole">
             <option>Frontend Developer</option>
             <option>Backend Developer</option>
+            <option>Full Stack Developer</option>
         </select>
         <br><br>
 
-        <button>Analyze Skill Gap</button>
+        <!-- Analyze Button -->
+        <button onclick="analyzeSkills()">Analyze Skill Gap</button>
 
-        <div id="result"></div>
+        <!-- Result -->
+        <div id="result" style="margin-top:20px;"></div>
     </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
 
 </body>
 </html>
