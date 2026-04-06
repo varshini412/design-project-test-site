@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - SkillBridge</title>
+    style.css
+</head>
+<body>
+
+    <div class="container">
+        <h2>Skill Gap Analyzer</h2>
+
+        <!-- Current Role -->
+        <label>Current Role</label><br>
+        <input type="text" id="currentRole"><br><br>
+
+        <!-- Skills -->
+        <label>Your Current Skills</label><br>
+        <input type="checkbox" value="HTML"> HTML<br>
+        <input type="checkbox" value="CSS"> CSS<br>
+        <input type="checkbox" value="JavaScript"> JavaScript<br><br>
+
+        <!-- Target Role -->
+        <label>Target Role</label><br>
+        <select id="targetRole">
+            <option>Frontend Developer</option>
+            <option>Backend Developer</option>
+        </select>
+        <br><br>
+
+        <button>Analyze Skill Gap</button>
+
+        <div id="result"></div>
+    </div>
+
+</body>
+</html>
